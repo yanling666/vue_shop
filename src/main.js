@@ -14,7 +14,8 @@ Vue.prototype.$http = axios
 
 //为axios设置请求的根路径
 //配置请求的根路径
-axios.defaults.baseURL = 'http://42.192.40.14:8889/api/private/v1/'
+// axios.defaults.baseURL = 'http://42.192.40.14:8889/api/private/v1/'
+axios.defaults.baseURL = 'https://lianghj.top:8888/api/private/v1/'
 axios.interceptors.request.use(config => {
     // console.log(config);
     config.headers.Authorization = window.sessionStorage.getItem('token')
